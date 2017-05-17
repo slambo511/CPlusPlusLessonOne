@@ -2,7 +2,7 @@
                                                 // Whitespace is ignore by the compiler, so use it to structure your code in a readable manner
 using namespace std;                            // Tells the compiler we are using the namespace std, see line 8
 
-int main()                                     // All C++ programs need an entry point, main() is it, void means it returns nothing
+ int main()                                     // All C++ programs need an entry point, main() is it, int means it returns an integer when it ends, this is used for error handling 0 = OK, 1(other number) = problem
 {                                               // Start of main()
     std::cout << "How to print to the console"; // cout outputs text to the console. The angle brackets denote the direction of the things, in this case a string toward cout
                                                 // The std:: point the compiler toward the namespace in which cout resides, here it is the std namespace
@@ -16,4 +16,6 @@ int main()                                     // All C++ programs need an entry
     cout << endl << "double: " << d;            // the next three lines move to a new line (endl) and output the double, integer and string we just created to the console
     cout << endl << "integer: " << i;
     cout << endl << "string: " << s;
+
+    return 0;                                    // main() returns an int and as there where no problems we will return 0
 }                                                // End of main()
